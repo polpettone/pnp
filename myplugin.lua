@@ -16,5 +16,9 @@ function M.public_func()
   private_func()
 end
 
+vim.api.nvim_create_user_command('Polpettone', function()
+  vim.api.nvim_set_current_line('Polpettone')
+end, {})
+
 -- Expose public API
 return M
